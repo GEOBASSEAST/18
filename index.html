@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            let number = Number(prompt('enter number'));
+            function isPrime(number) {
+            if (number===1 || number===0){
+                return false;
+
+            }
+            else {
+                for (let i = 2; i < number; i++) 
+                { if(number % i === 0){
+                    return false;
+
+                }
+            }
+            return true;
+            }
+        }
+        alert(isPrime(number));
+        </script>
+
+    </body>
+</html>
