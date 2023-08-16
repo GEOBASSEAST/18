@@ -22,7 +22,21 @@
             return true;
             }
         }
+
         alert(isPrime(number));
+
+        function showPrimes(number){
+            let result ='';
+
+            for(let i = 2; i <= number; i++){
+                if (isPrime(i)){
+                    result += `${i},`;
+                }
+            }
+
+            return result;
+        }
+        alert(showPrimes(number));
         </script>
 
     </body>
